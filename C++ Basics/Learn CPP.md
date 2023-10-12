@@ -31,6 +31,8 @@ int main()
     }
     return 0;
 }
+// if you are having an `if` it is not mandatory to have an `else` statement
+
 ```
 
 ## _A school has following rules for grading system:_
