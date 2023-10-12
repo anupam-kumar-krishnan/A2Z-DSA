@@ -140,7 +140,7 @@ int main()
 // g
 ```
 
-### _Why can't we store suppose 10 i.e. ten in any datatype like log long_
+### _Why can't we store suppose 10 i.e. ten in any datatype like long long_
 
 - It's because long long may end up taking a lot of space in compare to a integer
 
