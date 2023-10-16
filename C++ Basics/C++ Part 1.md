@@ -1,5 +1,14 @@
 <b>
 
+
+### _Why #include<bits/stdc++.h>?_
+```
+Instead of writing one library for a single operation, at the end it will become big in numbers
+
+Hence, to conclude it in a single library, there is `#include<bit/stdc++.h>` for us
+```
+
+
 ### _Without using namespace_
 
 ```cpp
