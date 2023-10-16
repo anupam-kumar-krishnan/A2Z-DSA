@@ -2,11 +2,11 @@
 
 
 ### _Why #include<bits/stdc++.h>?_
-```
-Instead of writing one library for a single operation, at the end it will become big in numbers
+- Instead of writing one library for a single operation, at the end it will become big in numbers
+- Hence, to conclude everything in a single library, there is `#include<bit/stdc++.h>` for us
 
-Hence, to conclude it in a single library, there is `#include<bit/stdc++.h>` for us
-```
+### _\n vs endl_
+- `\n` is faster than `endl`
 
 
 ### _Without using namespace_
@@ -18,6 +18,8 @@ int main()
      std::cout << "Hey without using namespace std";
      return 0;
 }
+//cout is a function which is under std
+
 ```
 
 ###  _Using namespace_
@@ -67,7 +69,7 @@ int main()
 | int | 4 | -2,147,483,648 to 2,147,483,647 |
 | unsigned long | 4 | 0 to 4,294,967,295 |
 | long long | 8 | -9,223,372,036,854,775,808 to -9,223,372,036,854,775,807 |
-| float | 4 | 1.2E-38 to 3.4+38 |
+| float | 4 | 1.2E-38 to 3.4E+38 |
 | double | 8 | 2.3E-308 to 1.7E+308 |
 | long double | 10 | 3.4E-4932 to 1.1E+4932 |
 
