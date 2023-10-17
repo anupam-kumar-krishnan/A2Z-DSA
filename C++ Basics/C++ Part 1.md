@@ -3,7 +3,7 @@
 
 ### _Why #include<bits/stdc++.h>?_
 - Instead of writing one library for a single operation, at the end it will become big in numbers
-- Hence, to conclude everything in a single library, there is `#include<bit/stdc++.h>` for us
+- Hence, to conclude everything in a single library, there is `#include<bits/stdc++.h>` for us
 
 ### _\n vs endl_
 - `\n` is faster than `endl`
