@@ -54,6 +54,24 @@ for(i=1 ; i<=5 ; i++){
 
 _**Example**_
 ![example](https://user-images.githubusercontent.com/91872149/210208684-b208f313-bc9d-4fa8-97d8-a4cb28daf8f0.png)
+Here Space Complexity: O(3)
+
+As 3 variables have been used in total
+
+_**Another Example**_ <br>
+If we are talking, <br>
+int a[N];     i.e. Space Complexity: O[N] - it is taking spaces to store element of the array
+
+<b>
+
+```txt
+Imagine, input is a and b
+b = a + b
+This is wrong, manipulating the data input is wrong
+```
+</b>
+
+Most of the server,  1s ~~ 10^8 executes per operation
 
 
 ## _Note:_
