@@ -1,10 +1,16 @@
 <b>
 
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
+## _Pattern 1_
 
-// Pattern 1
+```cpp
+****
+****
+****
+****
+```
+
+
+```cpp
 void printPattern1(int n)
 {
     for (int i = 0; i < n; i++)
@@ -16,14 +22,19 @@ void printPattern1(int n)
         cout << endl;
     }
 }
+```
 
+## _Pattern 2_
+
+```cpp
+*
+**
+***
 ****
-****
-****
-****
+```
 
 
-// Pattern 2
+```cpp
 void printPattern2(int n)
 {
     for (int i = 0; i < n; i++)
@@ -35,14 +46,19 @@ void printPattern2(int n)
         cout << endl;
     }
 }
+```
 
-*
-**
-***
-****
+## _Pattern 3_
 
+```cpp
+1
+12
+123
+1234
+12345
+```
 
-// Pattern 3
+```cpp
 void printPattern3(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -54,15 +70,19 @@ void printPattern3(int n)
         cout << endl;
     }
 }
+```
 
+## _Pattern 4_
+
+```cpp
 1
-12
-123
-1234
-12345
+22
+333
+4444
+55555
+```
 
-
-// Pattern 4
+```cpp
 void printPattern4(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -74,15 +94,17 @@ void printPattern4(int n)
         cout << endl;
     }
 }
+```
+## _Pattern 5_
+```cpp
+*****
+****
+***
+**
+*
+```
 
-1
-22
-333
-4444
-55555
-
-
-// Pattern 5
+```cpp
 void printPattern5(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -94,14 +116,19 @@ void printPattern5(int n)
         cout << endl;
     }
 }
+```
 
-*****
-****
-***
-**
-*
+## _Pattern 6_
 
-// Pattern 6
+```cpp
+12345
+1234
+123
+12
+1
+```
+
+```cpp
 void printPattern6(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -113,15 +140,19 @@ void printPattern6(int n)
         cout << endl;
     }
 }
+```
 
-12345
-1234
-123
-12
-1
+## _Pattern 7_
+```cpp
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+```
 
 
-// Pattern 7
+```cpp
 void printPattern7(int n)
 {
     for (int i = 0; i < n; i++)
@@ -146,15 +177,19 @@ void printPattern7(int n)
         cout << endl;
     }
 }
+```
 
-    *    
-   ***   
-  *****  
- ******* 
+## _Pattern 8_
+```cpp
 *********
+ ******* 
+  *****  
+   ***   
+    *    
+```
 
 
-// Pattern 8
+```cpp
 void printPattern8(int n)
 {
     for (int i = 0; i < n; i++)
@@ -179,35 +214,45 @@ void printPattern8(int n)
         cout << endl;
     }
 }
+```
 
+## _Pattern 9_
+```cpp
+    *    
+   ***   
+  *****  
+ ******* 
+*********
 *********
  ******* 
   *****  
    ***   
     *    
+```
 
 
-// Pattern 9
+```cpp
 void printPattern9(int n)
 {
     printPattern7(n);
     printPattern8(n);
 }
+```
 
+## _Pattern 10_
+```cpp
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+```
 
-    *    
-   ***   
-  *****  
- ******* 
-*********
-*********
- ******* 
-  *****  
-   ***   
-    *    
-
-
-// Pattern 10
+```cpp
 void printPattern10(int n)
 {
     for (int i = 1; i <= 2 * n - 1; i++)
@@ -222,18 +267,10 @@ void printPattern10(int n)
         cout << endl;
     }
 }
+```
 
-*
-**
-***
-****
-*****
-****
-***
-**
-*
-
-
+## _Initial main code_
+```cpp
 int main()
 {
     int t;
