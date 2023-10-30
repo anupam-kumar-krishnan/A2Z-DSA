@@ -78,6 +78,51 @@ cout << p.first << " " << p.second.first << " " << p.second.second << endl; // 1
 pair<int, int> arr[] = {{1,2},{2,5},{5,1}}
 cout<<arr[1].second; // 5
 ```
+</b>
+
+
+## _Vectors_
+- Vector is a container which is **dynamic** in nature
+- **emplace_back** is faster than **push_back**
+
+<b>
+
+```cpp
+void explainVector(){
+ v.push_back(1);
+ v.emplace_back(2);
+ 
+ vector.pair<int, int>vec;
+
+ v.push_back({1,2});
+ // In push_back, we need to write in curly brackets to make it a pair
+
+ v.emplace_back(1, 2);  
+ // In emplace_back, it automatically assumes it to be a pair without curly brackets
+
+ vector<int> v(5, 100);
+ // v(size, element) i.e. [100, 100, 100, 100, 100]
+ 
+ vector<int> v(5); 
+// without element will make a container with garbage value
+ 
+ vector<int> v1(5, 20);
+// [20, 20, 20, 20, 20]
+
+ vector<int> v2(v1);
+// copy of v1 is v2
+
+vector<int>::iterator it = v.begin();
+it++;
+
+cout<< *(it) << " ";
+
+```
+
+
+
+
+
 
 
 
