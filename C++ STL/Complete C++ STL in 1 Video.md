@@ -117,6 +117,39 @@ it++;
 
 cout<< *(it) << " ";
 
+it = it ++ 2;
+cout << *(it) << " ";
+
+vector<int>::iterator it = v.end(); // [10, 20, 30, 40] end will locate after 40
+vector<int>::iterator it = v.rend(); // reverse end means here before 10 [10, 20, 30, 40]
+vector<int>::iterator it = v.rbegin(); // reverse iterator
+
+cout<< v[0] <<" " <<v.at(0);
+
+cout<< v.back() << " "; // [10, 20, 30] Output: 30
+
+for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
+    cout<< *(it) << " ";
+}
+
+for(auto it=v.begin(); it !=v.end();i++){ // according to data, datatype will be assigned
+  cout<< *(it) <<" ";
+}
+
+for(auto it : v){
+  cout << it << " ";
+}
+
+// {10, 20, 12, 23}
+v.erase(v.begin() + 1); // [10, 12, 23]
+
+// {10, 20, 12, 23, 35}
+v.erase(v.begin() + 2, v.begin() + 4) // {10, 20, 35} {start, end}
+
+
+
+
+
 ```
 
 
