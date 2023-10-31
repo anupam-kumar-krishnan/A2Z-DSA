@@ -108,7 +108,9 @@ void explainVector(){
  
  vector<int> v(5); 
 // without element will make a container with garbage value
- 
+// even if I push an element after declaring vector, it will increase it's size accordingly
+// that's why it is called dynamic in nature
+
  vector<int> v1(5, 20);
 // [20, 20, 20, 20, 20]
 
