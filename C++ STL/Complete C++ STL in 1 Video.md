@@ -122,7 +122,7 @@ it++;
 
 cout<< *(it) << " ";
 
-it = it ++ 2;
+it = it + 2;
 cout << *(it) << " ";
 
 vector<int>::iterator it = v.end(); // [10, 20, 30, 40] end will locate after 40
