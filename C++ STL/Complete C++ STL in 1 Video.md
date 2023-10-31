@@ -89,6 +89,9 @@ cout<<arr[1].second; // 5
 
 ```cpp
 void explainVector(){
+
+ vector<int> v; //this creates an empty container
+
  v.push_back(1);
  v.emplace_back(2);
  
