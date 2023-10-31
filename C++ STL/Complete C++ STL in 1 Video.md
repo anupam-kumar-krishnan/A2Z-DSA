@@ -89,7 +89,7 @@ cout<<arr[1].second; // 5
 
 ```cpp
 void explainVector(){
-
+ // VECTOR
  vector<int> v; //this creates an empty container
 
  v.push_back(1);
@@ -117,10 +117,14 @@ void explainVector(){
  vector<int> v2(v1);
 // copy of v1 is v2
 
+// ITERATORS
+// Iterators points to the memory address
 vector<int>::iterator it = v.begin();
 it++;
+cout<< *(it) << " "; 
+// in order to access anything in the memory address, put an astric(star)
+// this will point to the value
 
-cout<< *(it) << " ";
 
 it = it + 2;
 cout << *(it) << " ";
@@ -133,29 +137,145 @@ cout<< v[0] <<" " <<v.at(0);
 
 cout<< v.back() << " "; // [10, 20, 30] Output: 30
 
+// FOR LOOP 1
 for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
     cout<< *(it) << " ";
 }
 
-for(auto it=v.begin(); it !=v.end();i++){ // according to data, datatype will be assigned
+// FOR LOOP 2
+// auto: according to data, datatype will be assigned automatically
+for(auto it=v.begin(); it !=v.end();i++){ 
   cout<< *(it) <<" ";
 }
 
+// FOR LOOP 3
 for(auto it : v){
   cout << it << " ";
 }
 
+// ERASE
 // {10, 20, 12, 23}
 v.erase(v.begin() + 1); // [10, 12, 23]
 
 // {10, 20, 12, 23, 35}
-v.erase(v.begin() + 2, v.begin() + 4) // {10, 20, 35} {start, end}
+v.erase(v.begin() + 2, v.begin() + 4) // {10, 20, 35} {start, end} | END IS NOT INCLUDED
 
+// INSERT FUNCTION
+vector<int>v(2, 100); //{100, 100}
+v.insert(v.begin(), 300); //{300, 100, 100} - inserts at the start
+v.insert(v.begin() + 1, 2, 10); // {300, 10, 10, 100, 100}
+//{position, number of elements, the number} 
 
+vector<int> copy(2, 50); //{50, 50}
+v.insert(v.begin(), copy.begin(), copy.end()); // {50, 50, 300, 10, 10, 100, 100}
 
+//{10, 20}
+cout<<v.size(); // 2
 
+// {10, 20}
+v.pop_back(); // {10}
+
+// v1 -> {10, 20}
+// v2 -> {30, 40}
+v1.swap(v2); // v1-> {30, 40} , v2 -> {10, 20}
+
+v.clear(); // erases the entire vector
+
+cout<<v.empty();
 
 ```
+
+## _List_
+- Insert function in a VECTOR is very costly
+
+```cpp
+void explainList(){
+  list<int> ls;
+ 
+  ls.push_back(2); // 2
+  ls.emplace_back(4); // {2, 4}
+  
+  ls.push_front(5); // {5, 2, 4}
+  ls.emplace_front(); {2,4};
+
+  // rest functions same as vector
+  // begin, end, rbegin, rend, clear, insert, size, swap
+}
+```
+
+## _Deque_
+
+```cpp
+void explainDeque(){
+   deque<int> dq;
+   dq.push_back(1); // {1}
+   dq.emplace_back(2); // {1, 2}
+   dq.push_front(4); // {4, 1, 2}
+   dq.emplace_front(3); // {3, 4, 1, 2}
+```
+
+## _Stack_
+- LIFO (Last In First Out)
+
+```cpp
+void explainStack(){
+    stack<int> st;
+    st.push(1); // {1}
+    st.push(2); // {2, 1}
+    st.push(3); // {3, 2, 1}
+    st.push(3); // {3, 3, 2, 1}
+    st.emplace(5); // {5, 3, 3, 2, 1}
+  
+    cout<< st.top(); // prints 5 "==st[2] is invalid=="
+   
+    st.pop(); // st looks like {3, 3, 2, 1}
+
+    cout<< st.top(); // 3
+    cout<< st.size(); // 4
+    cout<< st.empty(); // False - It has 4 elements
+ 
+    stack<int>st1, st2;
+    st1.swap(st2);
+}
+```
+
+## _Queue_
+
+```cpp
+void explainQueue(){
+    queue<int> q;
+    q.push(1); // {1}
+    q.push(2); // {1, 2}
+    q.emplace(4); // {1, 2, 4}
+    
+    q.back() += 5;
+
+    cout<<q.back(); // prints 9
+
+    // 0 is {1, 2, 9}
+    cout<< q.front(); // prints 1
+
+    q.pop(); // {2, 9}
+
+    cout<<q.front(); // prints 2
+  
+    // size swap empty same as stack
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
