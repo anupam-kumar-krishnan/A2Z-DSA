@@ -354,6 +354,130 @@ void explainSet(){
 }
 ```
 
+## _Multiset_
+- Everything is same as set
+- Only difference is it stores duplicate elemets also
+
+```cpp
+void explainMultiSet(){
+ multiset<int>ms;
+   ms.insert(1);
+   ms.insert(1);
+   ms.insert(1);
+
+   ms.erase(1);
+
+   int cnt = ms.count(1);
+
+   // only a single one erased
+   ms.erase(ms.find(1));
+
+   ms.erase(ms.find(1), ms.find(1)+2);
+
+   // rest all function same as set
+}
+```
+
+## _Unordered Set_
+- Only thing which is different, is that it doesn't save in a sorted order
+- It will have unique elements
+
+
+```cpp
+void explainUnorderedSet(){
+ unordered_set<int> st;
+ // lower_bound and upper_bound function
+ // doest not works, rest all functions are same
+ // as above, it does not stores in any
+ // particular order it has a better complexity
+ // rthan set in most cases, except some when collision happens
+}
+```
+
+##  _Map_
+- everything is in form of {key, value}
+- Map stores unique keys
+- Everything is stored in sorted order of key
+
+
+```cpp
+void explainMap(){
+ map<int, int> map;
+ map<int, pair<int, int>> mpp;
+ map pair<int, int>, int> mpp;
+ 
+ mpp[1] = 2;
+ mpp.emplace({3, 1});
+ mpp.insert({2, 4});
+ mpp({2, 3}) = 10;
+ {
+   {1, 2}
+   {2, 4}
+   {3, 1}
+ }
+
+ for(auto it:mpp){
+   cout<< it.first << " " << it.second << endl;
+ }
+
+ cout<<mpp[1];
+ cout<<mpp[5];
+ 
+ auto it = mpp.find(3);
+ cout<< *(it).second;
+ 
+ auto it = mpp.find(5); // if doesn't find 5, points to end after the map
+ 
+ // This is syntax
+ auto it = mpp.lower_bound(2);
+ auto it = mpp.upper_bound(3);
+
+ // erase, swap, size, empty, are same as above
+```
+
+## _Multimap_
+- Everything is same as map, only it can store multiple keys
+- Only map[key] cannot be used here
+- Can store duplicate keys, but everything in a sorted order
+
+
+## _Unordered Map_
+- Same as set and unordered_Set difference.
+- Difference is Map works in Logarithmic time log(n) while unordered Map works in Constant Time O(1)
+
+## _Algorithms_
+- Sorting
+
+```cpp
+void explainExtra(){
+ sort(a, a+n); // sort in ascending order
+ sort(v.begin(), v.end());
+ 
+ sort(a+2, a+4);
+ sort(a, a+n, greater<int>); // sort in descending order
+
+ pair<int, int> a[] = {{1, 2}, {2, 1}, {4, 1}};
+
+ // sort it according to second element
+ // if second element is same, then sort
+ // it according to first element but in descending
+
+  sort(a, a+n, comp);
+  // {{4,1}, {2,1}, {1,2}};
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
