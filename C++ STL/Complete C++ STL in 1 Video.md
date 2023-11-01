@@ -196,7 +196,7 @@ void explainList(){
   ls.emplace_back(4); // {2, 4}
   
   ls.push_front(5); // {5, 2, 4}
-  ls.emplace_front(); {2,4};
+  ls.emplace_front(); // {2,4};
 
   // rest functions same as vector
   // begin, end, rbegin, rend, clear, insert, size, swap
@@ -240,6 +240,7 @@ void explainStack(){
 ```
 
 ## _Queue_
+- FIFO (First In First Out)
 
 ```cpp
 void explainQueue(){
@@ -261,8 +262,105 @@ void explainQueue(){
   
     // size swap empty same as stack
 }
-
 ```
+
+## _Priority Queue_
+- As the name suggests i.e. Priority, the guys which has the largest value stays at the top
+- Data is not stored in a linear fashion (inside a tree is maintained)
+- Main functions: push, top, pop
+- Max Heap and Min Heap
+- push -> log n
+- top  -> O(1)
+- pop  -> log n
+
+
+
+```cpp
+void explainPQ(){
+ // Maximum Heap
+  priority_queue<int>pq;
+  
+  pq.push(5); // {5}
+  pq.push(2); // {5, 2}
+  pq.push(8); // {8, 5, 2}
+  pq.emplace(10); // {10, 8, 5, 2}
+  
+  cout<<pq.top(); // prints 10
+
+  pq.pop(); // {8, 5, 2}
+
+  cout<< pq.top(); // prints 8
+
+  // size swap empty function same as others
+  
+  // Minimum Heap
+  priority_queue<int, vector<int>, greater<int>> pq;
+  pq.push(5); // {5}
+  pq.push(2); // {2, 5}
+  pq.push(8); // {2, 5, 8}
+  pq.emplace(10); // {2, 5, 8, 10}
+
+  cout<< pq.top(); // prints 2
+}
+```
+
+## _Set_
+- Stores Everything in sorted order
+- Everything is unique
+- in Set, Everything happens in log(n) time complexity
+
+
+```cpp
+void explainSet(){
+  set<int>st;
+  st.insert(1); // {1}
+  st.emplace(2); // {1, 2}
+  st.insert(2); // {1, 2} - didn't store 2 again as it stores only unique
+  st.insert(4); // {1, 2, 4}
+  st.insert(3); // {1, 2, 3, 4}
+
+  // Functionality of insert in vector
+  // can be used also, that only increases
+  // efficiently
+
+  // begin(), end(), rbegin(), rend(), size(),
+  // empty() and swap are same as those of above
+
+  // {1, 2, 3, 4, 5}
+  auto it = st.find(3); // returns an iterator which points to 3
+
+  // {1, 2, 3, 4, 5}
+  auto it = st.find(6); // if element is not in the set | st.end()
+  
+  // {1, 4, 5}
+  st.erase(5); // erases 5 // takes logarithmic time
+
+  int cnt = st.count(1); // if exists -> 1 occurance only, else 0
+  
+  auto it = st.find(3);
+  st.erase(it); // it takes constant time
+
+  // {1, 2, 3, 4, 5}
+  auto it1=st.find(2);
+  auto it2=st.find(4);
+  st.erase(it1, it2); // after erase {1, 4, 5} {first, last}
+  
+  // lower_bound() and upper_bound() function works in the same way
+  // as in vector it does
+
+  // this is the syntax
+  auto it = st.lower_bound(2);
+  auto it = st.upper_bound(3); 
+}
+```
+
+
+
+
+
+
+
+
 
 
 
