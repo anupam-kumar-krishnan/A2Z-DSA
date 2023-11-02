@@ -449,11 +449,21 @@ void explainMap(){
 - Sorting
 
 ```cpp
+bool comp(pair<int, int> p1, pair<int, int> p2){
+  if(p1.second < p2.second) return true;
+  if(p1.second > p2.second) return false;
+  
+  // they are same
+  
+  if(p1.first > p2.first) return true;
+  return false;
+}
+
 void explainExtra(){
  sort(a, a+n); // sort in ascending order
  sort(v.begin(), v.end());
  
- sort(a+2, a+4);
+ sort(a+2, a+4); // sorting only for a particular portion
  sort(a, a+n, greater<int>); // sort in descending order
 
  pair<int, int> a[] = {{1, 2}, {2, 1}, {4, 1}};
@@ -462,8 +472,27 @@ void explainExtra(){
  // if second element is same, then sort
  // it according to first element but in descending
 
-  sort(a, a+n, comp);
+  sort(a, a+n, comp);  // Here comp means self written "comparator"
   // {{4,1}, {2,1}, {1,2}};
+
+  int num=7;
+  int cnt = __builtin_popcount(); // In binary 7 is | 1 1 1 |
+  // builtin_popcount says how manys one's are there 
+  // here the answer will be 3(for 7)
+
+  long long num = 165786578687;
+  int cnt = __builtin_popcountll(); // for long long ll wil be added in builtin_popcount
+
+  // NEXT PERMUTATION
+  string s="123";
+  sort(s.begin(), s.end());
+
+
+  do {
+   cout<< s << endl;
+  } while(next_permutation(s.begin(), s.end()));
+
+  int maxi = *max_element(a, a+n);
 }
 ```
 
