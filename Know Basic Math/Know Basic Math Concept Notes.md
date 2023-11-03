@@ -71,6 +71,34 @@ int main(){
 }
 ```
 
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int rev_num(int n)
+{
+    int revnum = 0;
+    while (n > 0)
+    {
+        int ld = n % 10;
+        n = n / 10;
+        revnum = (revnum * 10) + ld;
+    }
+    return revnum;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    cout << rev_num(n);
+
+    return 0;
+}
+```
+
+
+
 </b>
 
 
