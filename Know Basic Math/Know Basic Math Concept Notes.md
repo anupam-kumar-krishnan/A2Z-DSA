@@ -6,10 +6,10 @@
 - _**Do extraction of digits:**_ All the digit individually
 - Divide the number by 10
 
-**Step 1:**  _**7789 % 10 = 9 (remainder)**_ <br>
+**Step 1:**  _**7789 % 10 = 9 (remainder)**_ |  **_778.9 (taking just the integer part i.e. 778)_** <br>
 **Step 2:**  _**778 % 10  = 8**_ <br>
 **Step 3:**  _**77 % 10   = 7**_ <br>
-**Step 4:**  _**7 % 10    = 7**_ <br>
+**Step 4:**  _**7 % 10    = 7**_  | 0.7 (Here, integer part is Zero)<br>
 **Step 5:**  _**0**_
 
 <b>
@@ -22,19 +22,21 @@ while(N > 0){
 ```
 </b>
 
-### _Problem based on this concept_
+## _Problem based on this concept_
+
+### _Count Digits_
 
 <b>
 
 ```cpp
 int countDigits(int n){	
-	int cnt=0;
+       int cnt=0;
 
-	while(n>0){
-		cnt++;
-		n = n / 10;
+	while(n>0) {
+	   cnt++;
+	   n = n / 10;
 	}
-	return cnt;
+    return cnt;
 }
 ```
 
