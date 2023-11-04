@@ -109,7 +109,34 @@ int main()
 }
 ```
 
+## _Armstrong_
 
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    int sum = 0, dup=n;
+    
+    while (n > 0)
+    {
+        int ld = n % 10;
+        sum = sum + (ld*ld*ld);
+        n=n/10;
+    }
+    
+    if(sum==dup)
+     cout << "true";
+    else 
+     cout<<"false";
+     
+    return 0;
+}
+```
 
 
 </b>
