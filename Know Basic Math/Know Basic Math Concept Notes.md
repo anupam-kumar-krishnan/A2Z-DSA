@@ -198,6 +198,39 @@ int main()
 }
 ```
 
+## _Prime Number_
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n, cnt = 0;
+    cin >> n;
+
+    // Time Complexity: O(n)
+    // O(sqrt(n))
+    for (int i = 1; i * i <= n; i++)
+    {
+        if (n % i == 0)
+        {
+            cnt++;
+            if ((n / i) != i)
+            {
+                cnt++;
+            }
+        }
+    }
+
+    if (cnt == 2)
+        cout << "Prime";
+    else
+        cout << "Not Prime";
+    return 0;
+}
+```
+
 
 
 
