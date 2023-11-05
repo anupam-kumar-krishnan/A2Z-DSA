@@ -272,8 +272,8 @@ if(a==0)
 else 
    print(b);
 ```
+![Screenshot 2023-11-05 230054](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/ff71c153-14f0-4d44-91e6-276f0b4ad9fe)
 
-![Screenshot 2023-11-05 230054](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/382f09ce-6403-4aa3-920e-83860a5f04e7)
 
 </b>
 
