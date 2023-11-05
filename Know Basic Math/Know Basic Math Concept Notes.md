@@ -259,19 +259,22 @@ int main()
 - _**Greater % Smaller**_ -> _**If One of then is Zero**_ -> _**The Other is GCD**_
 
 ```cpp
-while(a > 0 && b > 0)
+int gcd(int a, int b)
 {
- if(a > b) 
-    a = a % b;
- else      
-    b = b % a;
-}
-
-if(a==0) 
-   print(a);
-else 
-   print(b);
+   while(a > 0 && b > 0)
+   {
+     if(a > b) 
+       a = a % b;
+     else      
+       b = b % a;
+   }
+   
+   if(a==0) return b;
+   return a;
+}  
 ```
+
+
 ![Screenshot 2023-11-05 230054](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/ff71c153-14f0-4d44-91e6-276f0b4ad9fe)
 
 
