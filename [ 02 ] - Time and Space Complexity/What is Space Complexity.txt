@@ -1,0 +1,40 @@
+What is Space Complexity
+
+- It simply means, how much memory does the program takes
+- Big-O notataion, used for space complexity too
+
+- Space Complexity = Auxiliary Space + Input Space
+
+- Auxiliary Space -> Space that you take to solve the problem 
+        +
+    Input Space   -> Space that you take to take the input of the problem
+
+variables a and b
+Storing a+b in c, c=a+b
+
+Here, we are taking an extra auxiliary space, c to solve the problem(we can use) 
+but we used an extra vaiable/extra space to solve the problem, that is 
+refered as "Auxiliary Space"
+
+In the above example, 
+c -> Auxiliary Space
+a, b -> Input Space
+
+Here, Space Complexity is O(3), as we are using 3 variables
+
+For Example, 
+int a[N], means it is consuimg the O(N) size
+
+For example,
+Imagine, Input given to a and b
+b=a+b
+
+******
+Here it is not taking any Auxiliary Space, but not perfered for Interviews
+You can't manipulate the Data, remember!!!
+
+Never do anything to the input
+******
+
+
+Most of the servers takes 1s~10^8, 2s~2*10^8 per operations
