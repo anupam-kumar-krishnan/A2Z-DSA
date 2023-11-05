@@ -254,12 +254,26 @@ int main()
 }
 ```
 
+## _Equilidean Algorithm_
+- gcd(a,b) -> gcd(a-b, b) ... -> 0
+- _**Greater % Smaller**_ -> _**If One of then is Zero**_ -> _**The Other is GCD**_
 
+```cpp
+while(a > 0 && b > 0)
+{
+ if(a > b) 
+    a = a % b;
+ else      
+    b = b % a;
+}
 
+if(a==0) 
+   print(a);
+else 
+   print(b);
+```
 
-
-
-
+![Screenshot 2023-11-05 230054](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/382f09ce-6403-4aa3-920e-83860a5f04e7)
 
 </b>
 
