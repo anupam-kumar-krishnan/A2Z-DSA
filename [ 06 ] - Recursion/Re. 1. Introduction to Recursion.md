@@ -22,7 +22,7 @@ cnt = 0 // Initially the cnt is zero
 
 void f()
 {
-  if( cnt == 4 ) // specified condition
+  if( cnt == 4 ) // this specified condition is called "Base Condition"
     return;
   cout<<cnt;
   cnt++;
