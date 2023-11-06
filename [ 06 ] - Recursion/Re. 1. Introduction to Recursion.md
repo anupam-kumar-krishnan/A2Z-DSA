@@ -9,6 +9,8 @@ void f()
   cout << "1" << endl;
   f();
 }
+
+
 main()
 {
   f();
