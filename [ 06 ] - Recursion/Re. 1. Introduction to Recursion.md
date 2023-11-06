@@ -37,7 +37,7 @@ cnt = 0 // Initially the cnt is zero
 
 void f()
 {
-  if( cnt == 4 ) // this specified condition is called "Base Condition"
+  if( cnt == 3 ) // this specified condition is called "Base Condition"
     return;
   cout<<cnt;
   cnt++;
@@ -53,11 +53,12 @@ main()
 // 0
 // 1
 // 2
-// 3
 ```
-
-
-
 </b>
+
+## _Recursion Tree_
+
+![WhatsApp Image 2023-11-06 at 11 24 39 PM](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/94c2619b-ea90-4911-88f5-f63fab5abf0a)
+
 
 
