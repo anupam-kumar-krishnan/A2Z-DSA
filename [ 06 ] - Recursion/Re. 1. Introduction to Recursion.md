@@ -10,12 +10,10 @@ void f()
   f();
 }
 
-
 main()
 {
   f();
 }
-
 ```
 ![recursion](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/dcc01b7a-faab-403e-b4cd-90b80d392d67)
 
