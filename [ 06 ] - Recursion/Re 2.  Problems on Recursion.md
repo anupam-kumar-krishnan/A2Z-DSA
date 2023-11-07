@@ -92,6 +92,57 @@ int main()
 ```
 </b>
 
+### _Print from 1 to N (Without using f(i+1,n))_
+
+<b>
+
+```cpp
+int printFromOneToNW(int i, int n)
+{
+    if (i < 1)
+        return 0;
+    printFromOneToNW(i-1, n);
+    cout<<i;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    printFromOneToNW(n, n);
+    return 0;
+}
+```
+</b>
+
+
+### _Print N to 1 using recursion but with backtracking_
+
+<b>
+
+```cpp
+void printOneToNWithBacktracking(int i, int num)
+{
+    if(i>num)
+       return;
+    printOneToNWithBacktracking(i+1, num);
+    cout<<i;
+}
+
+main()
+{
+  printOneToNWithBacktracking(1, num);
+}
+```
+</b>
+
+
+
+
+
+
+
+
 
 
 
