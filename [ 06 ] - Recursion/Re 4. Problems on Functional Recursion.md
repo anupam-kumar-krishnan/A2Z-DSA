@@ -42,6 +42,80 @@ main()
 }
 ```
 
+
+## _Code using One Pointer_
+
+```cpp
+void onepointerreversearray(int i, int arr[], int n){
+ if(i>= n/2) return;
+ swap(arr[i], arr[n-i-1]);
+ f(i+1, arr, n);
+}
+
+int main()
+{
+ int n;
+ cin>>n;
+ for(int i=0;i<n;i++)
+   cin >> arr[i];
+ onepointerreversearray(0, arr, n);
+ for(int i=0;i<n;i++) 
+   cout << arr[i] << " ";
+ return 0;
+}
+```
 </b>
+
+## _Check if String is Palindrome or not_
+- A string on reversal reads the same e,g, **_MADAM_**, **_11211_**
+- Instead of swapping, check if they are equal
+
+<b>
+
+```cpp
+f(i)
+{
+ if(i>=n/2) return true;
+ if(s[i] != s[n-i-1])
+   return false;
+ return f(i+1);
+}
+
+main()
+{
+  cout << f(0);
+}
+```
+
+### _Code_
+
+```cpp
+bool f(int i, string &s){
+  if(i>= s.size() / 2) return true;
+  if(s[i] != s[s.size() - i - 1]) return false;
+  return f(i+1, s);
+}
+
+int main()
+{
+  string s="madam";
+  cout<< f(0, s);
+  return 0;
+}
+// TC -> n/2
+// SC -> n/2
+```
+
+
+
+</b>
+
+
+
+
+
+
+
+
 
 
