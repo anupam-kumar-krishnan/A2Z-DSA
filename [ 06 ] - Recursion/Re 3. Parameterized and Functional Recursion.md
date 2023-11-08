@@ -37,6 +37,8 @@ int main()
 
 <b>
 
+## _Pseudo Code_
+
 ```cpp
 f(n)
 {
@@ -57,6 +59,25 @@ main()
 ![functional way](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/0dd6047b-0a6f-4ac9-8043-890cd36e4e6b)
 
 
+## _Functional Way Code_
+
+```cpp
+int sum(int n)
+{
+  if(n==0)
+    return 0;
+  return n + sum(n-1);
+}
+
+int main()
+{
+   int n;
+   cin>>n;
+   cout<<sum(n);
+}
+```
+
+## _Factorial of N_
 </b>
 
 
