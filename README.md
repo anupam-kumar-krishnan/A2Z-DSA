@@ -17,3 +17,9 @@
 | 04 | _**C++ STL**_ |
 | 05 | _**Know Basic Math**_ |
 | 06 | _**Re 1. Introduction to Recursion**_ |
+| 07 | _**Re 2.  Problems on Recursion.md**_ |
+| 08 | _**Re 3. Parameterized and Functional Recursion**_ |
+| 09 | _**Re 4. Problems on Functional Recursion**_ |
+
+
+
