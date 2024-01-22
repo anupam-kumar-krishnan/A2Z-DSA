@@ -25,6 +25,12 @@ int main()
     cout << num << endl;
     return 0;
 }
+
+//Output
+// 10
+// 15
+// 20
+// 10
 ```
 
 ```cpp
