@@ -100,7 +100,7 @@ int main()
 ```
 
 ### _Even Better Way_
-- this get clear idea to remove the and and makes the code short (even less time consuming compare to && above)
+- this get clear idea to remove the end and makes the code short (even less time consuming compare to && above)
 
 ```cpp
 #include<bits/stdc++.h>
