@@ -8,7 +8,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// pass by value - passed the copy original reains the same
+// pass by value - passed the copy original remains the same
 void doSomething(int num)
 {
     cout << num << endl;
