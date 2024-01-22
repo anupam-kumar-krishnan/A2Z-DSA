@@ -65,7 +65,7 @@ int main(){
 }
 ```
 
-## _Take two numbers amd print its Sum_
+## _Take two numbers and print its Sum_
 
 ```cpp
 #include <bits/stdc++.h>
