@@ -27,10 +27,10 @@ int main()
 }
 
 //Output
-// 10
-// 15
-// 20
-// 10
+// 10 {num = 10}
+// 15 {num + 5 = 15}
+// 20 {num(15) + 5 = 20}
+// 10 {num outside the function} | original value remains the same in "Pass by value"
 ```
 
 ```cpp
@@ -111,8 +111,10 @@ int main()
     return 0;
 }
 
-// Value inside function: 101
-// Value inside int main: 101
+// Input: 100 200 300 400 500
+// Output:
+// Value inside function: 200 {arr[0]=100, arr[0] += 100, 200}
+// Value inside int main: 200 {same changed here, 200}
 ```
 
 </b>
