@@ -435,5 +435,170 @@ void print18(int n)
     }
 }
 ```
+
+
+```cpp
+void print19(int n)
+{
+    /*      [stars,spaces,stars]
+    0 **********  5,0,5
+    1 ****  ****  4,2 4
+    2 ***    ***  3,4,3
+    3 **      **  2,6,2
+    4 *        *  1,8,1
+    5 *        *---- symmetry 1,8,1
+    6 **      **  2,6,2
+    7 ***    ***  3,4,3
+    8 ****  ****  4,2,4
+    9 **********  5,0,5
+    */
+    int iniS = 0;
+    for (int i = 0; i < n; i++)
+    {
+        // stars
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << "*";
+        }
+        // spaces n-2i
+        for (int j = 0; j < iniS; j++)
+        {
+            cout << " ";
+        }
+        // stars
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << "*";
+        }
+        iniS += 2;
+        cout << endl;
+    }
+    iniS = 8;
+    for (int i = 1; i <= n; i++)
+    {
+        // stars
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        // spaces n-2i
+        for (int j = 0; j < iniS; j++)
+        {
+            cout << " ";
+        }
+        // stars
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        iniS -= 2;
+        cout << endl;
+    }
+}
+```
+
+
+```cpp
+void print20(int n)
+{
+    /*
+    1 *        *  1,8,1
+    2 **      **  2,6,2
+    3 ***    ***  3,4,3
+    4 ****  ****  4,2,4
+    5 **********  5,0,5
+    6 ****  ****  4,2,4 (row==n/2)
+    7 ***    ***  3,4,3
+    8 **      **  2,6,2
+    9 *        *  1,8,1
+     */
+    // Outer loop: 2n-1
+    int spaces = 2 * n - 2;
+    for (int i = 1; i <= 2 * n - 1; i++)
+    {
+        int stars = i;
+        if (i > n)
+            stars = 2 * n - i;
+
+        // stars
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        // spaces
+        for (int j = 1; j <= spaces; j++)
+        {
+            cout << " ";
+        }
+
+        // stars
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+        if (i < n)
+            spaces -= 2;
+        else
+            spaces += 2;
+    }
+}
+```
+
+```cpp
+void print21(int n)
+{
+    /*
+      0123
+    0 ****
+    1 *  *
+    2 *  *
+    3 ****
+    */
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (i == 0 || j == 0 || i == n - 1 || j == n - 1)
+            {
+                cout << "*";
+            }
+            else
+                cout << " ";
+        }
+        cout << endl;
+    }
+}
+```
+
+```cpp
+void print22(int n)
+{
+    /*
+      1 2 3 4 5 6 7
+    -----------------
+    1| 4 4 4 4 4 4 4
+    2| 4 3 3 3 3 3 4
+    3| 4 3 2 2 2 3 4
+    4| 4 3 2 1 2 3 4
+    5| 4 3 2 2 2 3 4
+    6| 4 3 3 3 3 3 4
+    7| 4 4 4 4 4 4 4
+    */
+    for (int i = 0; i < 2 * n - 1; i++)
+    {
+        for (int j = 0; j < 2 * n - 1; j++)
+        {
+            int top = i;
+            int left = j;
+            int right = (2 * n - 2) - j;
+            int down = (2 * n - 2) - i;
+            cout << (n - min(min(top, down), min(left, right)));
+        }
+        cout << endl;
+    }
+}
+```
+
 </b>
 
