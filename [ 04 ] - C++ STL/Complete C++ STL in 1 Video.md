@@ -55,7 +55,7 @@ int main()
 - Functions
 - Iterators
 
-### 🎯 _Note: Before learning cotainers, learn pairs(a part of utility library)_
+### 🎯 _Note: Before learning `containers`, learn `pairs`(a part of utility library)_
 
 ## _Pair_
 - If you want to store couple of integers {1,3}, the only way we can store this is in a Pair
