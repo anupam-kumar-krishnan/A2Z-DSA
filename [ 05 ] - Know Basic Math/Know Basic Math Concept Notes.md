@@ -1,4 +1,11 @@
 # _Basic Math Concept_
+- Count Digits
+- Reverse a Number
+- Check Palindrome
+- GCD or HCF
+- Armstrong Numbers
+- Print all Divisors
+- Check for Prime
 
 ## _Digit Concept_
 
