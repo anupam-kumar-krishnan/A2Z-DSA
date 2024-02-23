@@ -83,7 +83,8 @@ int main()
 int fact(int n)
 {
  if(n==0)
-    return 1;
+    return 1; 
+// Here, we are returning 1 because at the end if we return zero, the whole output will be zero. Hence, returning 1
  return n * fact(n-1);
 }
 
