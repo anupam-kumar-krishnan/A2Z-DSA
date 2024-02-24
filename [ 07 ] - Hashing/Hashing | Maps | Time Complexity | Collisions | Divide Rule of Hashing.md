@@ -55,28 +55,39 @@ int main()
 
   int q;
   cin>>q;
-  
+
   while(q--){
     int number;
     cin >> number;
     // fetch
-    cout << hash[number]<<endl;
+    cout << hash[number] << endl;
   }
 
   return 0;
 }
 
-// Input
+// Input        Output
 // 5
 // 1 3 2 1 3
 // 5
-// 1
-// 4
-// 2
-// 3 
-// 12
+// 1            2
+// 4            0 
+// 2            1
+// 3            2
+// 12           0
 ```
 </b>
+
+## _Maximum hash Array size (Main vs Global)_
+- Array has max element till 10^9
+### _Main_
+- Can we declare arr[10^9 + 1] ❌ No we can't
+- At max, we can declare arr[10^6] inside main
+- arr[10^7] will throw Segmentation Fault, it doesn't allocate that much memory
+
+### _Global_
+- If we declare globally, int arr[1e7] then it can go till 10^7
+
 
 ## _Character Hashing_
 
