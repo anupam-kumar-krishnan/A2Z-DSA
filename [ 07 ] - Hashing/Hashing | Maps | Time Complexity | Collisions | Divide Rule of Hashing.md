@@ -79,7 +79,7 @@ int main()
 </b>
 
 ## _Maximum hash Array size (Main vs Global)_
-- Array has max element till 10^9
+- Array has max element till **10^9**
 ### _Main_
 - Can we declare arr[10^9 + 1] ❌ No we can't
 - At max, we can declare arr[10^6] inside main
