@@ -1,5 +1,5 @@
 # _Hashing_
-Suppose, an array is given
+_Suppose, an array is given_
 - Ask a number appearing in an array any number of times
 - Ask a lot of times for any number
 
