@@ -128,6 +128,63 @@ int main()
 
 
 ## _Character Hashing_
+- We can do Charecter Hasing using Arrays
+- Suppose there is a string given, `s="abcdabefc"`
+- And asked, how many times does `a` appears?
+- Times appears, a => 2, c => 2, z => 0 
+
+```cpp
+if(char c, string s)
+{
+   cnt=0;
+   for(i=0;i<n;i++
+   {
+     if(s[i]==c)
+         cnt++;
+   }
+  return cnt;
+}
+```
+
+### _Hash the above string in Arrays_
+- Suppose, Array only has lowercase alphabets
+- Since, there are 26 alphabets, Array of size 26, indexed from 0 to 25
+- Correspond a to 0, b to 1, c to 2.......z to 26
+- Every character has an index
+- We  can visualize a=0,b=1 but how can I visualize in program, this is where **_ASCII value_** comes in
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  string s;
+  cin >> s;
+
+  // pre compute
+  int hash[26] = {0};
+  for (int i = 0; i < s.size(); i++) {
+    hash[s[i] - 'a']++;
+  }
+
+  int q;
+  cin >> q;
+  while (q--) {
+    char c;
+    cin >> c;
+    cout << hash[c - 'a'] << endl;
+  }
+  return 0;
+}
+```
+
+
+
+
+
+
+
+
 
 
 
