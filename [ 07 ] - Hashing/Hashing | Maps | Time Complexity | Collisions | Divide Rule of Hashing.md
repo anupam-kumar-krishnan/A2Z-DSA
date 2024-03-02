@@ -22,6 +22,44 @@ int f(number, arr[])
 
 // Time Complexity, TC => O(n)
 ```
+
+### _Brute Force Code_
+
+```cpp
+#include<bits/stdc++.h> 
+using namespace std;
+int computeNumbers(int num, int arr[], int n) {
+    int cnt = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == num)
+            cnt++;
+    }
+    return cnt;
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    int num;
+    cin >> num;
+
+    int count = computeNumbers(num, arr, n);
+    cout << "Count of " << num << " is: " << count << endl;
+
+    return 0;
+}
+```
+
+
+
+
 </b>
 
 ## _Hashing Approach_
