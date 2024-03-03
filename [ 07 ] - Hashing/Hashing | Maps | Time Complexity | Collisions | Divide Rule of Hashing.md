@@ -193,19 +193,91 @@ int main() {
 ```
 </b>
 
+## _Number Hashing_
+- **STL** : Map and Unordered Map
+
+![map](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/9a2ff836-090f-40e5-861c-0e7f6c01888d)
+
+### _Code_
+
+<b>
+
+```cpp
+#include<bits/stdc++.h> 
+using namespace std;
 
 
+int main() {
+  int n;
+  cin>>n;
+
+  int arr[n];
+  for(int i=0;i<n;i++){
+    cin>>arr[i];
+  }
+  //precompute
+  map<int, int> mpp;
+  for(int i=0;i<n;i++){
+    mpp[arr[i]]++;
+  }
+
+  //iterate in the map
+   for(auto it : mpp){
+     cout<<it.first << "->" <<it.second<<endl;
+   }
+
+  int q;
+  cin>>q;
+  while(q--){
+    int number;
+    cin>>number;
+    //fetch
+    cout<< mpp[number]<<endl;
+    
+  }
+  return 0;
+}
+
+/* 
+Input                Output
+7                    1->2
+1 2 3 1 3 2 12       2->2
+5                    3->2
+1                    12->1
+2                    2
+3                    2
+4                    2  
+12                   0 
+                     1
+*/  
+```
+</b>
+
+### _Time Complexity of map_
+- Storing and Fetching -> log N -> best, avg, worst
+
+### _unordered_map_
+- In ordered_map, everything is in a sorted order
+- But in unordered_map, everything is not in a sorted order
+- In unordered_map, we can only have single data type, not pair
 
 
+### _Time Complexity of Unordered Map_
+- Stroing and Fetching -> O(1) -> avg, best case, O(n) -> worst case
+- n = number of elements in map
+
+## _Hashing Working_
+- _**Divison Method**_
+- _**Folding Method**_
+- _**Mod Square Method**_
 
 
+### _Division Method_
 
+![divison method](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/ac13f634-195b-414a-add5-0a1aec17e28a)
 
-
-
-
-
-
+### _Collision Method_
+- Where the chaining collide with other elements in a big array
 
 
 
