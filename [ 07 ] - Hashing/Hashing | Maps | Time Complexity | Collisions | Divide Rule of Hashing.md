@@ -25,6 +25,8 @@ int f(number, arr[])
 
 ### _Brute Force Code_
 
+<b>
+
 ```cpp
 #include<bits/stdc++.h> 
 using namespace std;
@@ -47,16 +49,22 @@ int main() {
         cin >> arr[i];
     }
 
-    int num;
-    cin >> num;
+    int times;
+    cin>>times;
 
+    while(times--){
+      int num;
+      cin>>num;
     int count = computeNumbers(num, arr, n);
-    cout << "Count of " << num << " is: " << count << endl;
+    cout << count << endl;
+    }
 
     return 0;
 }
-```
 
+// TC => O(n)
+```
+</b>
 
 
 
@@ -133,6 +141,8 @@ int main()
 - And asked, how many times does `a` appears?
 - Times appears, a => 2, c => 2, z => 0 
 
+<b>
+
 ```cpp
 if(char c, string s)
 {
@@ -145,6 +155,8 @@ if(char c, string s)
   return cnt;
 }
 ```
+</b>
+
 
 ### _Hash the above string in Arrays_
 - Suppose, Array only has lowercase alphabets
@@ -152,6 +164,8 @@ if(char c, string s)
 - Correspond a to 0, b to 1, c to 2.......z to 26
 - Every character has an index
 - We  can visualize a=0,b=1 but how can I visualize in program, this is where **_ASCII value_** comes in
+
+<b>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -177,7 +191,7 @@ int main() {
   return 0;
 }
 ```
-
+</b>
 
 
 
