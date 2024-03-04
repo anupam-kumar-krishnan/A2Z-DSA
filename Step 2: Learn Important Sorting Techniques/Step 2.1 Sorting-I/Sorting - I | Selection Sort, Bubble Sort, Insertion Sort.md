@@ -77,6 +77,111 @@ Output
 # _Bubble Sort_
 - Pushes the _**maximum element**_ to the **_last_** by adjacent swaps
 
+![Bubble Sort](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/31740b42-d2b6-413b-b079-4308b068ed95)
+
+### _Pesudo Code_
+
+<b>
+
+```cpp
+for(i=n-1;i>=i;i++)
+{ 
+ for(j=0;j<=i;j++)
+  {
+   if(a[j] > a[j+1])
+    swap
+   }
+}
+```
+</b>
+
+### _Code_
+
+<b>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+void bubble_sort(int arr[], int n){
+  for(int i=n-1;i>=0;i--){
+    for(int j=0;j<=i-1;j++){
+      if(arr[j] > arr[j+1]){
+        int temp = arr[j+1];
+        arr[j+1] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
+}
+
+int main() {
+  int n;
+  cin >> n;
+  int arr[n];
+  for (int i = 0; i < n; i++)
+    cin >> arr[i];
+
+  bubble_sort(arr, n);
+
+  for (int i = 0; i < n; i++) {
+    cout << arr[i] << " ";
+  }
+  return 0;
+}
+```
+</b>
+
+### _Time Complexity of Bubble Sort: O(n^2)[Worst Complexity] and O(n)[Best case]_
+
+### _Bubble Sort: Best Time Complexity Code: O(n)_
+
+<b>
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+void bubble_sort(int arr[], int n){
+  for(int i=n-1;i>=0;i--){
+   int didSwap = 0;
+
+    for(int j=0;j<=i-1;j++){
+      if(arr[j] > arr[j+1]){
+        int temp = arr[j+1];
+        arr[j+1] = arr[j];
+        didSwap = 1;
+      }
+    }
+   if(didSwap == 0)
+      break;
+   }
+    cout<<"runs\n";
+  }
+}
+
+int main() {
+  int n;
+  cin >> n;
+  int arr[n];
+  for (int i = 0; i < n; i++)
+    cin >> arr[i];
+
+  bubble_sort(arr, n);
+
+  for (int i = 0; i < n; i++) {
+    cout << arr[i] << " ";
+  }
+  return 0;
+}
+```
+</b>
+
+
+
+
+
+
 
 
 
