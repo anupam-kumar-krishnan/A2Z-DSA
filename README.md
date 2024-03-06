@@ -1,4 +1,4 @@
-# _Strivers A2Z DSA Course 💻_
+# _Strivers A2Z DSA Course💻_
 ![image](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/1874fb38-c163-4bb9-a3ba-aeb335ca6781)
 
 # _Links 🔗_
