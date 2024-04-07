@@ -36,7 +36,7 @@ int main()
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
-void sum(int a, int b){
+int sum(int a, int b){
     return a+b;
 }
 
