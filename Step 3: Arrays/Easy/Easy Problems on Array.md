@@ -1,0 +1,86 @@
+# Largest Element in Array
+**Brute Force Approach:**
+- Sort the array
+- Return the last element
+- Time Complexity: O(NlogN)
+
+**Optimized Approach:**
+- Take max as the first element
+- Compare it with next element
+- Change the value of max if next is greater
+- Time Complexity: O(logN)
+
+# Second Largest Element in Array
+**Brute Force Approach:**
+- O(2N) = O(N)
+- One from the first pass, second from another
+
+```cpp
+    int print2largest(vector<int> &arr) {
+       int n=arr.size(),lg=arr[0];
+
+       for (int i=0;i<n;i++){
+           if(arr[i] > lg)
+           lg=arr[i];
+       }
+
+       int slg=-1;
+
+       for(int i=0;i<n;i++)
+       {
+           if(arr[i]>slg && arr[i]!=lg)
+           slg=arr[i];
+       }
+       
+       return slg;  
+    }
+```
+
+**Optimized Approach:**
+- O(N)
+
+```cpp
+class Solution {
+  public:
+    // Function returns the second
+    // largest elements
+    int secondLargest(vector<int> &arr, int n){
+        int largest = arr[0];
+        int slargest = -1;
+        for(int i=0;i<n;i++){
+            if(arr[i] > largest){
+                slargest = largest;
+                largest = arr[i];
+            }
+            else if(arr[i] < largest && arr[i] > slargest){
+                slargest = arr[i];
+            }
+        }
+        return slargest;
+    }
+    
+    int secondSmallest(vector<int> arr, int n){
+        int smallest = arr[0];
+        int ssmallest = INT_MAX;
+        for(int i=1;i<n;i++){
+            if(arr[i]< smallest){
+                ssmallest = smallest;
+                smallest = arr[i];
+            }
+            else if(arr[i]!=smallest && arr[i]<ssmallest){
+             ssmallest = arr[i];
+            }
+        }
+        return ssmallest;
+    }
+    
+    
+    int print2largest(vector<int> &arr) {
+        // Code Here
+        int n=arr.size();
+        int slargest=secondLargest(arr,n);
+        int ssmallest = secondSmallest(arr, n);
+        return slargest;
+    }
+};
+```
