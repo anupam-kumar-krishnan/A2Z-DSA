@@ -84,3 +84,40 @@ class Solution {
     }
 };
 ```
+
+# Check if an Array is Sorted or NOT
+- Time Complexity: O(N)
+
+```cpp
+bool check(vector<int>& nums) {
+        int n=nums.size();
+        
+        for(int i=1;i<n;i++) {
+            if(nums[i] >= nums[i-1]) {
+            }
+            else {
+                return false;
+            }
+        }
+   return true;
+}
+```
+
+# Remove Duplicates from a Sorted Array
+
+**Optimal Approach**
+
+```cpp
+int removeDuplicates(vector<int>& nums) {
+        int i=0;
+        for(int j=1;j<nums.size();j++)
+        {
+            if(nums[j] != nums[i])
+            {
+              nums[i+1] = nums[j];
+              i++;
+            }
+        }
+        return {i+1};
+    }
+```
