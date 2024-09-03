@@ -271,5 +271,20 @@ vector<int> findUnion(int arr1[], int arr2[], int n, int m)
 }
 ```
 
+# Find Missing Number in an Array
+
+```cpp
+int missingNumber(vector<int>& nums) {
+        int n = nums.size() + 1;
+        int t = (n * (n-1)) / 2;
+        
+        for (int num : nums) {
+            t -= num;
+        }
+        
+        return t;
+}
+```
+
 
 
