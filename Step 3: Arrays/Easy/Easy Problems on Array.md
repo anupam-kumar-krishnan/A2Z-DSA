@@ -1,6 +1,6 @@
 # Easy Problems on Array
 
-# Largest Element in Array
+## Largest Element in Array
 **Brute Force Approach:**
 - Sort the array
 - Return the last element
@@ -12,7 +12,7 @@
 - Change the value of max if next is greater
 - Time Complexity: O(logN)
 
-# Second Largest Element in Array
+## Second Largest Element in Array
 **Brute Force Approach:**
 - O(2N) = O(N)
 - One from the first pass, second from another
@@ -87,7 +87,7 @@ class Solution {
 };
 ```
 
-# Check if an Array is Sorted or NOT
+## Check if an Array is Sorted or NOT
 - Time Complexity: O(N)
 
 ```cpp
@@ -105,7 +105,7 @@ bool check(vector<int>& nums) {
 }
 ```
 
-# Remove Duplicates from Sorted Array
+## Remove Duplicates from Sorted Array
 
 ```cpp
 int removeDuplicates(vector<int>& nums) {
@@ -122,7 +122,7 @@ int removeDuplicates(vector<int>& nums) {
 }
 ```
 
-# Left Rotate Array By One
+## Left Rotate Array By One
 
 ```cpp
 vector<int> rotateArray(vector<int>& arr, int n) {
@@ -136,7 +136,7 @@ vector<int> rotateArray(vector<int>& arr, int n) {
 }
 ```
 
-# Left rotate the array by D places
+## Left rotate the array by D places
 - not working properly
 
 ```cpp
@@ -175,7 +175,7 @@ void rotate(vector<int>& nums, int k) {
 }
 ```
 
-# Move Zeros
+## Move Zeros
 
 ```cpp
 class Solution {
@@ -239,7 +239,7 @@ public:
 };
 ```
 
-# Linear Search
+## Linear Search
 
 ```cpp
 int searchInSorted(int arr[], int N, int K) {
@@ -251,7 +251,7 @@ int searchInSorted(int arr[], int N, int K) {
     }
 ```
 
-# Union of two Sorted Arrays
+## Union of two Sorted Arrays
 
 ```cpp
 vector<int> findUnion(int arr1[], int arr2[], int n, int m)
@@ -273,7 +273,7 @@ vector<int> findUnion(int arr1[], int arr2[], int n, int m)
 }
 ```
 
-# Find Missing Number in an Array
+## Find Missing Number in an Array
 
 ```cpp
 int missingNumber(vector<int>& nums) {
@@ -285,6 +285,24 @@ int missingNumber(vector<int>& nums) {
         }
         
         return t;
+}
+```
+
+## Maximum Consecutive Ones
+
+```cpp
+int findMaxConsecutiveOnes(vector<int>& nums) {
+      int cnt = 0;
+      int maxi = 0;
+      for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] == 1) {
+          cnt++;
+        } else {
+          cnt = 0;
+        }
+        maxi = max(maxi, cnt);
+      }
+  return maxi;
 }
 ```
 
