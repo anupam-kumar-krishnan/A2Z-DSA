@@ -306,7 +306,7 @@ int findMaxConsecutiveOnes(vector<int>& nums) {
 }
 ```
 
-## Longest Subarray with given Sum K (Posities)
+## Longest Subarray with given Sum K (Positives)
 
 ```cpp
 int getLongestSubarray(vector<int>& a, long long k) {
