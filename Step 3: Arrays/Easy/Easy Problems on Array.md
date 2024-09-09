@@ -207,7 +207,7 @@ public:
 };
 ```
 
-- Optimal Approach - not working (check)
+- Optimal Approach - Not working (check)
 
 ```cpp
 class Solution {
