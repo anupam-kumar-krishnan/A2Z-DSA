@@ -19,3 +19,19 @@ vector<int> twoSum(vector<int>& nums, int target) {
 }
 ```
 </b>
+
+# Sort an array of 0s, 1s and 2s
+
+[Leetcode Link](https://leetcode.com/problems/sort-colors/description/)
+
+<b>
+
+```cpp
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+    }
+};
+```
+</b>
