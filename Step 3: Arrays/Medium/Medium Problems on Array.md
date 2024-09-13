@@ -1,9 +1,9 @@
 # Medium Problems on Array
 
-# 2Sum
+## 2Sum
 
 
-[Leetcoode Problem Link](https://leetcode.com/problems/two-sum/description/)
+[Leetcoode Link](https://leetcode.com/problems/two-sum/description/)
 
 <b>
   
@@ -22,7 +22,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 ```
 </b>
 
-# Sort an array of 0s, 1s and 2s
+## Sort an array of 0s, 1s and 2s
 
 [Leetcode Link](https://leetcode.com/problems/sort-colors/description/)
 
@@ -38,7 +38,9 @@ public:
 ```
 </b>
 
-# Best Time to Buy and Sell Stocks
+## Best Time to Buy and Sell Stocks
+
+[Leetcode Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 
 <b>
 
@@ -56,6 +58,41 @@ public:
     }
     
     return maxPro;
+    }
+};
+```
+</b>
+
+## Rearrange Array Elements by Sign
+
+[Leetcode Link](https://leetcode.com/problems/rearrange-array-elements-by-sign/description/)
+
+<b>
+
+```cpp
+class Solution {
+public:
+    vector<int> rearrangeArray(vector<int>& nums) {
+        
+        int n=nums.size();
+        vector<int> pos;
+        vector<int> neg;
+        
+
+        for(int i=0;i<n;i++){
+            if(nums[i]>0)
+                pos.push_back(nums[i]);
+            else
+                neg.push_back(nums[i]);
+        }
+
+        for(int i=0;i<n/2;i++){
+            nums[2*i] = pos[i];
+            nums[2*i+1] = neg[i];
+        }
+
+        return nums;
+        
     }
 };
 ```
