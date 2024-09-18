@@ -38,7 +38,7 @@ public:
 ```
 </b>
 
-## Best Time to Buy and Sell Stocks
+## Stocks Buy and Sell
 
 [Leetcode Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 
