@@ -1,4 +1,4 @@
-# Easy Problems on Array
+# _Easy Problems on Array_
 
 ## Largest Element in Array
 **Brute Force Approach:**
