@@ -126,3 +126,31 @@ int majorityElement(vector<int> v) {
 }
 ```
 </b>
+
+## Maximum Subarray
+
+<b>
+	
+```cpp
+int maxSubarraySum(int arr[], int n) {
+    int maxi = INT_MIN; // maximum sum
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            // subarray = arr[i.....j]
+            int sum = 0;
+
+            //add all the elements of subarray:
+            for (int k = i; k <= j; k++) {
+                sum += arr[k];
+            }
+
+            maxi = max(maxi, sum);
+        }
+    }
+
+    return maxi;
+}
+
+```
+</b>
