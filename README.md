@@ -1,5 +1,6 @@
 # _Strivers A2Z DSA Course_
-![image](https://github.com/anupam-kumar-krishnan/A2Z-DSA/assets/69143883/1874fb38-c163-4bb9-a3ba-aeb335ca6781)
+![image](https://github.com/user-attachments/assets/fe188df0-2e53-4884-af50-3a89ac398049)
+
 
 # _Links 🔗_
 - _**Website Link: [Takeyouforward](https://takeuforward.org/)**_
