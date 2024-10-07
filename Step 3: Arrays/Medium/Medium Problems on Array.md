@@ -2,7 +2,6 @@
 
 ## 2Sum
 
-
 [Leetcoode Link](https://leetcode.com/problems/two-sum/description/)
 
 <b>
