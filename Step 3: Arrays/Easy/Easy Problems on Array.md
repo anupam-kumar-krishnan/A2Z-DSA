@@ -1,6 +1,6 @@
 # _Easy Problems on Array_
 
-## Largest Element in Array
+## _Largest Element in Array_
 **Brute Force Approach:**
 - Sort the array
 - Return the last element
