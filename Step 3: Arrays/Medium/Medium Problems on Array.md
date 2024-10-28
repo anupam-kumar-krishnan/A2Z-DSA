@@ -1,4 +1,4 @@
-# _Medium Problems on Array_
+# Medium Problems on Array
 
 ## 2Sum
 
