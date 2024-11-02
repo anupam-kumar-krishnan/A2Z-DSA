@@ -17,6 +17,8 @@
 - O(2N) = O(N)
 - One from the first pass, second from another
 
+<b>
+    
 ```cpp
     int print2largest(vector<int> &arr) {
        int n=arr.size(),lg=arr[0];
@@ -37,10 +39,13 @@
        return slg;  
     }
 ```
+</b>
 
 **Optimized Approach:**
 - O(N)
 
+<b>
+    
 ```cpp
 class Solution {
   public:
@@ -86,9 +91,12 @@ class Solution {
     }
 };
 ```
+</b>
 
 ## Check if an Array is Sorted or NOT
 - Time Complexity: O(N)
+
+<b>
 
 ```cpp
 bool check(vector<int>& nums) {
@@ -104,9 +112,12 @@ bool check(vector<int>& nums) {
    return true;
 }
 ```
+</b>
 
 ## Remove Duplicates from Sorted Array
 
+<b>
+    
 ```cpp
 int removeDuplicates(vector<int>& nums) {
         int i=0;
@@ -121,9 +132,12 @@ int removeDuplicates(vector<int>& nums) {
    return i+1;
 }
 ```
+</b>
 
 ## Left Rotate Array By One
 
+<b>
+    
 ```cpp
 vector<int> rotateArray(vector<int>& arr, int n) {
     int temp=arr[0];
@@ -135,9 +149,12 @@ vector<int> rotateArray(vector<int>& arr, int n) {
     return arr;
 }
 ```
+</b>
 
 ## Left rotate the array by D places
 - not working properly
+
+<b>
 
 ```cpp
 void rotate(vector<int>& nums, int k) {
@@ -162,7 +179,11 @@ void rotate(vector<int>& nums, int k) {
         }
     }
 ```
+</b>
+
 - _**Working**_
+
+<b>
 
 ```cpp
 void rotate(vector<int>& nums, int k) {
@@ -174,9 +195,12 @@ void rotate(vector<int>& nums, int k) {
       reverse(nums.begin() + k, nums.end());  
 }
 ```
+</b>
 
 ## Move Zeros
 
+<b>
+    
 ```cpp
 class Solution {
 public:
@@ -206,9 +230,12 @@ public:
     }
 };
 ```
+</b>
 
 - Optimal Approach - Not working (check)
 
+<b>
+    
 ```cpp
 class Solution {
 public:
@@ -238,9 +265,12 @@ public:
     }
 };
 ```
+</b>
 
 ## Linear Search
 
+<b>
+    
 ```cpp
 int searchInSorted(int arr[], int N, int K) {
         for(int i=0;i<N;i++){
@@ -250,8 +280,11 @@ int searchInSorted(int arr[], int N, int K) {
         return -1;
     }
 ```
+</b>
 
 ## Union of two Sorted Arrays
+
+<b>
 
 ```cpp
 vector<int> findUnion(int arr1[], int arr2[], int n, int m)
@@ -272,9 +305,12 @@ vector<int> findUnion(int arr1[], int arr2[], int n, int m)
    return temp;   
 }
 ```
+</b>
 
 ## Find Missing Number in an Array
 
+<b>
+    
 ```cpp
 int missingNumber(vector<int>& nums) {
         int n = nums.size() + 1;
@@ -287,8 +323,11 @@ int missingNumber(vector<int>& nums) {
         return t;
 }
 ```
+</b>
 
 ## Maximum Consecutive Ones
+
+<b>
 
 ```cpp
 int findMaxConsecutiveOnes(vector<int>& nums) {
@@ -305,8 +344,11 @@ int findMaxConsecutiveOnes(vector<int>& nums) {
   return maxi;
 }
 ```
+</b>
 
 ## Longest Subarray with given Sum K (Positives)
+
+<b>
 
 ```cpp
 int getLongestSubarray(vector<int>& a, long long k) {
@@ -327,6 +369,7 @@ int getLongestSubarray(vector<int>& a, long long k) {
     return len;
 }
 ```
+</b>
 
 
 
