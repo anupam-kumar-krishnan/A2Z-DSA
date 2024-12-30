@@ -2,7 +2,7 @@
 
    ```cpp
    class Solution {
-public:
+    public:
     void moveZeroes(vector<int>& nums) {
 
         vector<int> temp;
