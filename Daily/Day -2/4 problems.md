@@ -29,3 +29,5 @@
     }
    };
    ```
+
+   2. Left Rotate Array
