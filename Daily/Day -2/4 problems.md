@@ -30,4 +30,4 @@
    };
    ```
 
-   2. Left Rotate Array
+2. Left Rotate Array
