@@ -45,16 +45,18 @@ class Solution {
 3. Check if Array is Sorted
 
 ```cpp
-bool isSorted(int arr[], int n) {
-  for (int i = 0; i < n; i++) {
-    for (int j = i + 1; j < n; j++) {
-      if (arr[j] < arr[i])
-        return false;
+bool check(vector<int>& nums) {
+        int cnt=0,n=nums.size();
+        for(int i=0;i<n-1;i++){
+            if(nums[i]>nums[i+1])
+               cnt++;
+        }      
+            if(nums[n-1] > nums[0]){
+                cnt++;
+            }    
+            
+        return cnt <= 1;
     }
-  }
-
-  return true;
-}
 ```
 
 4. Remove Duplicates from a Sorted Array
