@@ -1,4 +1,4 @@
-# _Strivers A2Z DSA Sheet_
+# Strivers A2Z DSA Sheet
 ![image](https://github.com/user-attachments/assets/fe188df0-2e53-4884-af50-3a89ac398049)
 
 
