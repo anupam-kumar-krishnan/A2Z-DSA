@@ -1,7 +1,5 @@
 ## Valid Palindrome
 
-<b>
-
 ```cpp
 class Solution {
 public:
@@ -21,4 +19,4 @@ public:
     }
 };
 ```
-</b>
+
